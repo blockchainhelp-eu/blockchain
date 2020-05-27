@@ -1,0 +1,23 @@
+{
+        "ProvisionedThroughput": {
+            "WriteCapacityUnits": 2,
+            "ReadCapacityUnits": 1
+        },
+        "AttributeDefinitions": [
+            {
+                "AttributeType": "S",
+                "AttributeName": "Code"
+            }
+        ],
+        
+        "TableName": "ReferenceData",
+        "KeySchema": [
+            {
+                "KeyType": "HASH",
+                "AttributeName": "Code"
+            }
+        ]
+   
+        
+        
+}
